@@ -4,8 +4,8 @@ import { fileURLToPath } from "url";
 import bodyParser from "body-parser";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-app.use(bodyParser.urlencoded({extended : true}))
 const app = express();
+app.use(bodyParser.urlencoded({extended : true}))
 const port = 3000;
 
 app.get("/", (req, res) => {
